@@ -9,3 +9,4 @@ WM0824TU Economics of Cyber Security (2020)
 - Document your code. 
 - Use meaningful variable names. 
 - Add descriptive comments to the commits.
+- **IMPORTANT** Use PEP8 style convention. [PEP8 Guidelines](https://www.python.org/dev/peps/pep-0008/)
