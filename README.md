@@ -18,4 +18,5 @@ WM0824TU Economics of Cyber Security (2020)
 - Go inside the project folder and open a new CMD window. 
 - Type **pipenv install**.
 - A **.venv/** folder should appear in the repository.
-- Type **pipenv shell** to activate the environment. 
+- Type **pipenv shell** to activate the environment.
+- **IMPORTANT** To contribute/install/add libraries in the pipenv use the following command: **pipenv install {package_name}** 
