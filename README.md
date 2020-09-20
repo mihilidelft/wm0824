@@ -11,12 +11,12 @@ WM0824TU Economics of Cyber Security (2020)
 - Use meaningful variable names. 
 - Add descriptive comments to the commits.
 
-
 ### How to use PIPENV
-- Install the library: **pip install pipenv**.
+- Install the library: `pip install pipenv`
 - Add **PIPENV_VENV_IN_PROJECT** in your environmental variables and set the value to **true**.
-- Go inside the project folder and open a new CMD window. 
-- Type **pipenv install**.
+- Go inside the project folder and open a new **CMD** window. 
+- Type `pipenv install`
 - A **.venv/** folder should appear in the repository.
-- Type **pipenv shell** to activate the environment.
-- **IMPORTANT** To contribute/install/add libraries in the pipenv use the following command: **pipenv install {package_name}** 
+- Type `pipenv shell` to activate the environment.
+- **IMPORTANT!** To install libraries in the pipenv use the following command: `pipenv install [package_name]`. In this way we can guarantee that all the necessary libaries will be available when somebody will recreate the environment. 
+- Do **NOT** use `pip install [package_name]`, instead use `pipenv install [package_name]`. Make sure you are in the repository/project folder when you type the command.
