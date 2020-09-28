@@ -10,6 +10,8 @@ jupyterlab = "*"
 otxv2 = "*"
 pandas = "*"
 requests = "*"
+numpy = "*"
+matplotlib = "*"
 
 [requires]
 python_version = "3.8"
