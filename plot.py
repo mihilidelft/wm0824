@@ -24,7 +24,25 @@ plt.show()
 save_json = json.load(open("plot_url.json"))
 for e in save_json:
 	plt.plot(dateutil.parser.parse(e[0]), e[1], e[2])
-plt.ylabel("Amount of URLs added to AlienVault from TU Delft dataset (50 IPs)")
+plt.ylabel("Amount of URLs added to AlienVault from TU Delft dataset (50 URLs)")
 plt.xlabel("x = added by an API, o = added manually")
 plt.title("URL Emotet (TA542)")
+plt.show()
+
+### email Emotet (TA542)
+save_json = json.load(open("plot_email.json"))
+for e in save_json:
+	plt.plot(dateutil.parser.parse(e[0]), e[1], e[2])
+plt.ylabel("Amount of email addresses added to AlienVault from TU Delft dataset (116 addresses)")
+plt.xlabel("x = added by an API, o = added manually")
+plt.title("Email addresses Emotet (TA542)")
+plt.show()
+
+### hostname Emotet (TA542)
+save_json = json.load(open("plot_host.json"))
+for e in save_json:
+	plt.plot(dateutil.parser.parse(e[0]), e[1], e[2])
+plt.ylabel("Amount of hostnames added to AlienVault from TU Delft dataset (50 URLs + 116 email = 166 hostnames)")
+plt.xlabel("x = added by an API, o = added manually\ngreen = from URL, blue = from email address")
+plt.title("Hostnames Emotet (TA542)")
 plt.show()
